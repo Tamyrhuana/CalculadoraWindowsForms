@@ -43,12 +43,13 @@
             button12 = new Button();
             button13 = new Button();
             button14 = new Button();
-            button15 = new Button();
+            btnResultado = new Button();
             button1 = new Button();
             SuspendLayout();
             // 
             // txtOperacao
             // 
+            txtOperacao.Enabled = false;
             txtOperacao.Location = new Point(20, 33);
             txtOperacao.Multiline = true;
             txtOperacao.Name = "txtOperacao";
@@ -73,6 +74,7 @@
             btn2.TabIndex = 2;
             btn2.Text = "2";
             btn2.UseVisualStyleBackColor = true;
+            btn2.Click += btn2_Click;
             // 
             // btn3
             // 
@@ -183,14 +185,15 @@
             button14.Text = "/";
             button14.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // btnResultado
             // 
-            button15.Location = new Point(267, 321);
-            button15.Name = "button15";
-            button15.Size = new Size(53, 52);
-            button15.TabIndex = 15;
-            button15.Text = "=";
-            button15.UseVisualStyleBackColor = true;
+            btnResultado.Location = new Point(267, 321);
+            btnResultado.Name = "btnResultado";
+            btnResultado.Size = new Size(53, 52);
+            btnResultado.TabIndex = 15;
+            btnResultado.Text = "=";
+            btnResultado.UseVisualStyleBackColor = true;
+            btnResultado.Click += btnResultado_Click;
             // 
             // button1
             // 
@@ -207,7 +210,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(348, 409);
             Controls.Add(button1);
-            Controls.Add(button15);
+            Controls.Add(btnResultado);
             Controls.Add(button14);
             Controls.Add(button13);
             Controls.Add(button12);
@@ -246,7 +249,7 @@
         private Button button12;
         private Button button13;
         private Button button14;
-        private Button button15;
+        private Button btnResultado;
         private Button button1;
     }
 }
