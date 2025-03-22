@@ -49,6 +49,7 @@
             // 
             // txtOperacao
             // 
+            txtOperacao.Enabled = false;
             txtOperacao.Location = new Point(20, 33);
             txtOperacao.Multiline = true;
             txtOperacao.Name = "txtOperacao";

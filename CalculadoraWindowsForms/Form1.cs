@@ -6,6 +6,7 @@ namespace CalculadoraWindowsForms
         private bool dividir = false;
         private bool multiplicar = false;
         private bool subtrair = false;
+
         public Form1()
         {
             InitializeComponent();
